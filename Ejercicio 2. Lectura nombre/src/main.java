@@ -13,17 +13,24 @@ public class main {
 
             // Pedimos y leemos la edad
             System.out.print("ESCRIBE TU EDAD: ");
-            int edad = sc.nextInt(); // nextInt() lee un número entero
+            int edad = sc.nextInt();// nextInt() lee un número entero
+            sc.nextLine(); // consumimos un salto de linea que queda pendiente
+
+            System.out.print("¿DONDE VIVES?: ");
+            String ciudad = sc.nextLine();
 
             //  Mostramos los resultados
             System.out.println("Te llamas " + nombre);
             System.out.println("Tienes " + edad + " años");
+            System.out.println("Vives en " + ciudad);
 
             // Mensaje final
             System.out.println("Pulsa enter para continuar …");
             sc.nextLine(); // Limpiamos el salto de línea pendiente
             sc.nextLine(); // Esperamos a que el usuario presione Enter
 
-            sc.close(); // Cerramos el Scanner
+
+
+        sc.close(); // Cerramos el Scanner
         }
     }
